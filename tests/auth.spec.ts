@@ -14,7 +14,7 @@ const page = await context.newPage();
 //Approach2:
 // we can pass username and password in url like selenium like below
 //(await page).goto("https://username:password@the-internet.herokuapp.com/basic_auth");
-await page.goto("https://www.google.com/");
+await page.goto("https://admin:admin@the-internet.herokuapp.com/basic_auth");
 
 //(await page).goto("https://the-internet.herokuapp.com/basic_auth");
 await page.waitForLoadState();
