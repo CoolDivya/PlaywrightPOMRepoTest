@@ -2,9 +2,9 @@ name: Nightly Playwright Regression
 
 on:
   schedule:
-    - cron: '0 2 * * *'
+    - cron: '50 14 * * *'
   workflow_dispatch:
-    
+
 jobs:
   test:
     timeout-minutes: 60
