@@ -1,4 +1,4 @@
-name: Playwright Tests
+name: Smoke Tests
 on:
    schedule:
     # 3:25 PM IST converts to 09:55 UTC (IST is UTC +5:30)
