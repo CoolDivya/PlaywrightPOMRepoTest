@@ -1,4 +1,4 @@
-name: Nightly Playwright Regression
+name: Nightly Playwright Regression test
 
 on:
   schedule:
