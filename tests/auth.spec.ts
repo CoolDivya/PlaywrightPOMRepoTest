@@ -1,6 +1,6 @@
 import {test, expect, chromium} from "@playwright/test"
 
-test("test authenticated pop-up", async()=>{
+test("authenticated pop-up testing", async()=>{
 
 const browser = await chromium.launch()
 
