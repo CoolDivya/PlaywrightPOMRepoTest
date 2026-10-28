@@ -9,6 +9,7 @@ type MyFixtures = {
 
 const test = base.extend<MyFixtures>({
     loginPage: async ({ page }, use) => {
+       
         const loginPage = new LoginPage(page);
         await loginPage.login();
         await use(loginPage);

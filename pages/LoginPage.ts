@@ -17,8 +17,15 @@ export class LoginPage {
 
     async login() {
         await this.page.goto('https://www.saucedemo.com/');
-        await this.username.fill('standard_user');
-        await this.password.fill('secret_sauce');
+
+        const username = process.env.TEST_USERNAME;
+        const password = process.env.TEST_PASSWORD;
+
+         if (!username || !password) {
+        throw new Error('TEST_USERNAME or TEST_PASSWORD is missing');
+    }
+        await this.username.fill(username);
+        await this.password.fill(password);
         await this.loginButton.click();
        
     }
